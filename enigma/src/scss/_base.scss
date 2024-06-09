@@ -22,12 +22,6 @@ body {
                 margin-left: 20px;
                 transition: all .5s;
 
-                &:hover {
-                    // transform: rotate(180deg);
-                    width: 10rem;
-                    height: 10rem;
-                }
-
                 svg {
                     transition: all .15s;
                 }

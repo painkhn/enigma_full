@@ -30,10 +30,6 @@ body input {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.header__cont .search button:hover {
-  width: 10rem;
-  height: 10rem;
-}
 .header__cont .search button svg {
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
