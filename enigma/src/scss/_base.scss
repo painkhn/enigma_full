@@ -25,6 +25,11 @@ body {
                 svg {
                     transition: all .15s;
                 }
+
+                &:hover {
+                    width: 40px;
+                    height: 40px;
+                }
             }
 
             input {
@@ -39,6 +44,8 @@ body {
                     width: 40px;
                     height: 40px;
                 }
+
+                
             }
 
         }
@@ -98,3 +105,20 @@ body {
         @include page__grid;
     }
 }
+
+// .expanded {
+//     pointer-events: auto;
+//     display: inline-block;
+//     width: 40px;
+//     height: 40px;
+//   }
+//   #search-button:hover,
+// #search-button:focus {
+//   width: 40px;
+//   height: 40px;
+// }
+
+// .expanded #search-svg {
+//     width: 40px;
+//     height: 40px;
+//   }
