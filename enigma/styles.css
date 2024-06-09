@@ -1,0 +1,86 @@
+:root {
+  --color-dark: #222;
+  --color-black: #111;
+  --color-white: #eaeaea;
+  --color-primary: #E76868;
+  --shadow: 0 5px 15px #000;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-black);
+  font-family: "JetBrains Mono", monospace;
+}
+body input {
+  outline: none;
+}
+
+.header {
+  background-color: var(--color-dark);
+}
+.header__cont {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+.header__cont .search button {
+  margin-left: 20px;
+  -webkit-transition: all 0.65s;
+  transition: all 0.65s;
+}
+.header__cont .search button:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.header__cont .search input {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.header__cont .search input:focus {
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+.header__cont .profile a {
+  color: var(--color-white);
+}
+.header__cont .profile a:hover {
+  color: var(--color-primary);
+  text-shadow: var(--shadow);
+}
+.header__cont .profile a:hover svg {
+  margin-right: 20px;
+}
+
+.navigation {
+  background: transparent;
+}
+.navigation__cont {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+.navigation__cont li:not(:first-child) {
+  margin-left: 20px;
+}
+.navigation__cont a {
+  color: var(--color-white);
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+.navigation__cont a:hover {
+  color: var(--color-primary);
+  text-shadow: var(--shadow);
+}
+
+.main {
+  min-height: calc(100vh - 136px);
+}
+.main__cont {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}

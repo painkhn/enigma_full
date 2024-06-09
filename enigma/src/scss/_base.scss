@@ -1,0 +1,86 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-black);
+    font-family: "JetBrains Mono", monospace;;
+
+    input {
+        outline: none;
+    }
+}
+
+.header {
+    background-color: var(--color-dark);
+
+    &__cont {
+        @include page__grid;
+
+        .search {
+
+            button {
+                margin-left: 20px;
+                transition: all .65s;
+
+                &:hover {
+                    transform: rotate(360deg);
+                }
+            }
+
+            input {
+                transition: all .2s;
+
+                &:focus {
+                    box-shadow: var(--shadow);
+                }
+            }
+
+        }
+
+        .profile {
+            a {
+                color: var(--color-white);
+            }
+            a:hover {
+                color: var(--color-primary);
+                text-shadow: var(--shadow);
+
+                svg {
+                    margin-right: 20px;
+                }
+            }
+
+            
+        }
+        
+    }
+}
+
+.navigation {
+    
+    background: transparent;
+    &__cont {
+        @include page__grid;
+
+        li:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        a {
+            color: var(--color-white);
+            transition: all .15s;
+
+            &:hover {
+                color: var(--color-primary);
+                text-shadow: var(--shadow);
+            }
+        }
+    }
+    }
+
+.main {
+    min-height: calc( 100vh - ( 80px + 56px ) );
+
+    &__cont {
+        @include page__grid;
+    }
+}
