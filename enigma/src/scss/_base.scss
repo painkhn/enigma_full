@@ -2,7 +2,8 @@ body {
     width: 100%;
     min-height: 100vh;
     background-color: var(--color-black);
-    font-family: "JetBrains Mono", monospace;;
+    font-family: "JetBrains Mono", monospace;
+    
 
     input {
         outline: none;
@@ -19,10 +20,16 @@ body {
 
             button {
                 margin-left: 20px;
-                transition: all .65s;
+                transition: all .5s;
 
                 &:hover {
-                    transform: rotate(360deg);
+                    // transform: rotate(180deg);
+                    width: 10rem;
+                    height: 10rem;
+                }
+
+                svg {
+                    transition: all .15s;
                 }
             }
 
@@ -31,6 +38,12 @@ body {
 
                 &:focus {
                     box-shadow: var(--shadow);
+
+                }
+
+                &:focus + button svg {
+                    width: 40px;
+                    height: 40px;
                 }
             }
 
@@ -60,6 +73,13 @@ body {
     background: transparent;
     &__cont {
         @include page__grid;
+
+        li:hover {
+            svg {
+                width: 40px;
+                height: 40px;
+            }
+        }
 
         li:not(:first-child) {
             margin-left: 20px;

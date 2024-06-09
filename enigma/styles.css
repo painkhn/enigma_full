@@ -27,12 +27,16 @@ body input {
 }
 .header__cont .search button {
   margin-left: 20px;
-  -webkit-transition: all 0.65s;
-  transition: all 0.65s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .header__cont .search button:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  width: 10rem;
+  height: 10rem;
+}
+.header__cont .search button svg {
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
 }
 .header__cont .search input {
   -webkit-transition: all 0.2s;
@@ -41,6 +45,10 @@ body input {
 .header__cont .search input:focus {
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
+}
+.header__cont .search input:focus + button svg {
+  width: 40px;
+  height: 40px;
 }
 .header__cont .profile a {
   color: var(--color-white);
@@ -61,6 +69,10 @@ body input {
   width: 100%;
   margin: 0 auto;
   height: 100%;
+}
+.navigation__cont li:hover svg {
+  width: 40px;
+  height: 40px;
 }
 .navigation__cont li:not(:first-child) {
   margin-left: 20px;
