@@ -41,8 +41,7 @@ body {
                 }
 
                 &:focus + button svg {
-                    width: 40px;
-                    height: 40px;
+                    @include icon__animation;
                 }
 
                 
@@ -77,8 +76,7 @@ body {
 
         li:hover {
             svg {
-                width: 40px;
-                height: 40px;
+                @include icon__animation;
             }
         }
 
@@ -103,22 +101,41 @@ body {
 
     &__cont {
         @include page__grid;
+
+        .category {
+            background-color: var(--color-dark);
+            color: #fff;
+
+            &__title {
+                color: var(--color-primary);
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 20px;
+
+                    svg {
+                        transition: all .2s;
+                        margin-right: 15px;
+                    }
+
+                    
+                    a {
+                        transition: all .2s;
+                        
+                        &:hover {
+                            color: var(--color-primary);
+                            text-shadow: var(--shadow);
+
+                            svg {
+                                @include icon__animation;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
-
-// .expanded {
-//     pointer-events: auto;
-//     display: inline-block;
-//     width: 40px;
-//     height: 40px;
-//   }
-//   #search-button:hover,
-// #search-button:focus {
-//   width: 40px;
-//   height: 40px;
-// }
-
-// .expanded #search-svg {
-//     width: 40px;
-//     height: 40px;
-//   }
