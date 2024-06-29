@@ -1,0 +1,3 @@
+@function getFont($size, $amount: 2px) {
+    @return $size - $amount;
+}

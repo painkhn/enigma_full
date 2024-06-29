@@ -12,7 +12,6 @@ body {
   background-color: var(--color-black);
   font-family: "JetBrains Mono", monospace;
 }
-
 body input {
   outline: none;
 }
@@ -20,132 +19,207 @@ body input {
 .header {
   background-color: var(--color-dark);
 }
-
 .header__cont {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   height: 100%;
 }
-
 .header__cont .search button {
   margin-left: 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .header__cont .search button svg {
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
 }
-
 .header__cont .search button:hover {
   width: 40px;
   height: 40px;
 }
-
 .header__cont .search input {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .header__cont .search input:focus {
   -webkit-box-shadow: var(--shadow);
-  box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
 }
-
-.header__cont .search input:focus+button svg {
+.header__cont .search input:focus + button svg {
   width: 40px;
   height: 40px;
 }
-
 .header__cont .profile a {
   color: var(--color-white);
 }
-
 .header__cont .profile a:hover {
   color: var(--color-primary);
   text-shadow: var(--shadow);
 }
-
 .header__cont .profile a:hover svg {
   margin-right: 20px;
+}
+.header__cont .profile a:active {
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
+  color: var(--color-white);
+  font-size: 14px;
 }
 
 .navigation {
   background: transparent;
 }
-
 .navigation__cont {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   height: 100%;
 }
-
 .navigation__cont li:hover svg {
   width: 40px;
   height: 40px;
 }
-
 .navigation__cont li:not(:first-child) {
   margin-left: 20px;
 }
-
 .navigation__cont a {
   color: var(--color-white);
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
 }
-
 .navigation__cont a:hover {
   color: var(--color-primary);
   text-shadow: var(--shadow);
+}
+.navigation__cont a:active {
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
+  color: var(--color-white);
+  font-size: 14px;
 }
 
 .main {
   min-height: calc(100vh - 136px);
 }
-
 .main__cont {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   height: 100%;
 }
-
 .main__cont .category {
   background-color: var(--color-dark);
   color: #fff;
 }
-
 .main__cont .category__title {
   color: var(--color-primary);
   font-weight: 700;
-  margin-bottom: 20px;
 }
-
 .main__cont .category ul li {
   margin-bottom: 20px;
 }
-
 .main__cont .category ul li svg {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   margin-right: 15px;
 }
-
 .main__cont .category ul li a {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .main__cont .category ul li a:hover {
   color: var(--color-primary);
   text-shadow: var(--shadow);
 }
-
 .main__cont .category ul li a:hover svg {
   width: 40px;
   height: 40px;
+}
+.main__cont .category ul li a:active {
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
+  color: var(--color-white);
+  font-size: 14px;
+}
+.main__cont .theme {
+  background-color: var(--color-dark);
+}
+.main__cont .theme__title {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+.main__cont .theme__list li {
+  height: 30px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main__cont .theme__list li a {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  vertical-align: middle;
+  font-size: 18px;
+}
+.main__cont .theme__list li a:hover {
+  color: var(--color-primary);
+  text-shadow: var(--shadow);
+}
+.main__cont .theme__list li a:hover .left-line {
+  height: 26px;
+}
+.main__cont .theme__list li a:active {
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
+  color: var(--color-white);
+  font-size: 16px;
+}
+.main__cont .theme__list li a .left-line {
+  background: var(--color-primary);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.footer {
+  background: var(--color-dark);
+}
+.footer__cont {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+.footer__cont .developer a {
+  color: #fff;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+.footer__cont .developer a svg {
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+.footer__cont .developer a:hover {
+  color: var(--color-primary);
+  text-shadow: var(--shadow);
+}
+.footer__cont .developer a:hover svg {
+  width: 40px;
+  height: 40px;
+}
+.footer__cont .developer a:active {
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
+  color: var(--color-white);
+  font-size: 14px;
+}
+
+.login__cont {
+  background: var(--color-dark);
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+.login__cont .title {
+  color: var(--color-primary);
+  text-shadow: var(--shadow);
 }
