@@ -19,3 +19,8 @@
     color: var(--color-primary);
     text-shadow: var(--shadow);
 }
+
+@mixin profile__info {
+    color: var(--color-primary);
+    font-weight: 700;
+}
