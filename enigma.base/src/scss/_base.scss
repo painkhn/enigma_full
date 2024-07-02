@@ -3,7 +3,7 @@ body {
     min-height: 100vh;
     background-color: var(--color-black);
     font-family: "JetBrains Mono", monospace;
-    
+    animation: fadeAnimation ease 1s;
 
     input {
         outline: none;
@@ -11,6 +11,16 @@ body {
         &[type=submit] {
             cursor: pointer;
         }
+    }
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
